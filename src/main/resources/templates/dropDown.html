@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf Knockout Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<form>
+    <select th:field="${formBean.selectedElement}">
+        <option th:each="element : ${formBean.dropDownEntryList}"
+                th:value="${element.id}"
+                th:text="${element.description}">Element
+        </option>
+    </select>
+</form>
+
+</body>
+</html>
