@@ -3,12 +3,12 @@ package hello;
 /**
  * @author Holger Grosse-Plankermann (xd98714)
  */
-public class DropDownEntry {
+public class BurgerEntry {
     String id;
 
     String description;
 
-    public DropDownEntry(String id, String description) {
+    public BurgerEntry(String id, String description) {
         this.id = id;
         this.description = description;
     }

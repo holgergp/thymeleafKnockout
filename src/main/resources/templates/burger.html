@@ -1,17 +1,28 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
     <title>Thymeleaf Knockout Test</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="/static/jquery.js"></script>
+    <script src="/static/knockout-latest.js"></script>
+    <script src="/static/app.js"></script>
 </head>
 <body>
 <form>
+    <!--
     <select th:field="${formBean.selectedElement}">
         <option th:each="element : ${formBean.dropDownEntryList}"
                 th:value="${element.id}"
                 th:text="${element.description}">Element
         </option>
     </select>
+  -->
+    <div id="knockoutRegion">
+        <select data-bind="options: burger,
+                       optionsText: 'description',
+                       value: selectedBurger,
+                       optionsCaption: 'Choose...'"></select>
+    </div>
 </form>
 
 </body>
