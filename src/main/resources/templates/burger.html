@@ -9,7 +9,9 @@
     <script src="/static/app.js"></script>
 </head>
 <body>
-<form>
+<form action="#" th:action="@{/save/}"
+      th:object="${burgerNeuIntent}"
+      method="post" id="burgerForm">
     <!--
     <select th:field="${formBean.selectedElement}">
         <option th:each="element : ${formBean.dropDownEntryList}"
@@ -20,7 +22,7 @@
   -->
     <div id="knockoutRegion">
         <div>
-            <select data-bind="options: burger,
+            <select th:field="*{burgerId}" id="burgerId" data-bind="options: burger,
                        optionsText: 'description',
                        value: selectedBurger,
                        optionsCaption: 'Choose...'"></select>
@@ -39,8 +41,11 @@
                        value: selectedDrink,
                        optionsCaption: 'Choose...'"></select>
         </div>
+        <div class="">
+            <input class="button" type="submit" value="Order"/>
 
-        <!--http://stackoverflow.com/questions/25426804/add-a-dropdown-dynamically-on-button-click-and-bind-values-using-knockout-->
+            <!--http://stackoverflow.com/questions/25426804/add-a-dropdown-dynamically-on-button-click-and-bind-values-using-knockout-->
+        </div>
     </div>
 </form>
 

@@ -1,4 +1,4 @@
-package hello;
+package de.codecentric.burger.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package hello;
+package de.codecentric.burger;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

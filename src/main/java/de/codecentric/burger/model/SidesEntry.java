@@ -1,4 +1,4 @@
-package hello;
+package de.codecentric.burger.model;
 
 /**
  * @author Holger Grosse-Plankermann (xd98714)
