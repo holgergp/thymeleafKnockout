@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^2.2.1",
-    "knockout": "^3.4.0"
+    "knockout": "^3.4.0",
+    "underscore.string": "^3.2.3"
   }
 }
