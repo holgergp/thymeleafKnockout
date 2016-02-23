@@ -1,4 +1,4 @@
-Sample application to showcase Spring MVC/Thymeleaf and Knockout.js interoperation.
+Sample application to showcase Spring MVC/Thymeleaf and Knockout.js interoperation. Loosely based on <code>https://spring.io/guides/gs/serving-web-content/</code>
 
 For simplicities sake this is build with Spring Boot. I assume you have Java 8 installed.
 
