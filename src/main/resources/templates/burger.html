@@ -18,10 +18,28 @@
     </select>
   -->
     <div id="knockoutRegion">
-        <select data-bind="options: burger,
+        <div>
+            <select data-bind="options: burger,
                        optionsText: 'description',
                        value: selectedBurger,
                        optionsCaption: 'Choose...'"></select>
+        </div>
+
+
+        <div data-bind="visible: sidesVisible">
+            <select data-bind="options: sides,
+                       optionsText: 'description',
+                       value: selectedSide,
+                       optionsCaption: 'Choose...'"></select>
+        </div>
+        <div data-bind="visible: drinksVisible">
+            <select data-bind="options: drinks,
+                       optionsText: 'description',
+                       value: selectedDrink,
+                       optionsCaption: 'Choose...'"></select>
+        </div>
+
+        <!--http://stackoverflow.com/questions/25426804/add-a-dropdown-dynamically-on-button-click-and-bind-values-using-knockout-->
     </div>
 </form>
 

@@ -17,7 +17,7 @@ public class BurgerController {
 
     @RequestMapping("/burger")
     @ResponseBody
-    public BurgerBean eintrage(Model model) {
+    public BurgerBean burger(Model model) {
         ArrayList<BurgerEntry> burgerList = new ArrayList<>();
         burgerList.add(new BurgerEntry("1", "Hamburger"));
         burgerList.add(new BurgerEntry("2", "Cheese-Burger"));
@@ -26,6 +26,19 @@ public class BurgerController {
         BurgerBean burgerBean = new BurgerBean(burgerList);
 
         return burgerBean;
+    }
+
+    @RequestMapping("/sides")
+    @ResponseBody
+    public SidesBean sides(Model model) {
+        ArrayList<SidesEntry> sidesList = new ArrayList<>();
+        sidesList.add(new SidesEntry("1", "Fries"));
+        sidesList.add(new SidesEntry("2", "Sweet Potatto Fries"));
+        sidesList.add(new SidesEntry("3", "Coleslaw"));
+
+        SidesBean sidesBean = new SidesBean(sidesList);
+
+        return sidesBean;
     }
 
 }
