@@ -7,3 +7,5 @@ Please run <code>npm install</code> first
 
 To start the application run <code>mvn spring-boot:run</code>
 
+See the application running under <code>http://localhost:8080/helloBurger</code>
+
